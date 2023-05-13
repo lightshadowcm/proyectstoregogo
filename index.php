@@ -8,5 +8,8 @@
 </head>
 <body>
     <h2>hola!</h2>
+    <script>
+        alert("hola")
+    </script>
 </body>
 </html>
