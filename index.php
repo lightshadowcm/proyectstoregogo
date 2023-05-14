@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>hola2!</h2>
+    <h2>hola5!</h2>
    
 </body>
 </html>
@@ -19,7 +19,7 @@ $user = 'dbadmintg';
 $password ='PedroPeruan.';
 $conexion=pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 if($conexion){
-    // echo'<script>alert("conexcion exitosa");</script>';
+    
     $query = "SELECT id,nombre,empresa from proveedor";
                 $consulta = pg_query($conexion, $query);
 
