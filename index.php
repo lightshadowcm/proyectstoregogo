@@ -12,7 +12,12 @@
 </body>
 </html>
 <?php
-$conexion=pg_connect('host=dbtiendagogo.postgres.database.azure.com port=5432 dbname=postgres user=dbadmintg password=Pedroperuan.');
+$host= 'dbtiendagogo.postgres.database.azure.com';
+$port = '5432';
+$dbname = 'Tienda GoGo';
+$user = 'dbadmintg';
+$password ='PedroPeruan.';
+$conexion=pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 if($conexion){
      echo'
       <script>
