@@ -8,8 +8,19 @@
 </head>
 <body>
     <h2>hola!</h2>
-    <script>
-        alert("hola");
-    </script>
+   
 </body>
 </html>
+<?php
+$conexion=pg_connect('host=dbtiendagogo.postgres.database.azure.com port=5432 dbname=Tienda GoGo user=dbadmintg password=Pedroperuano.');
+if($conexion){
+     echo'
+      <script>
+        alert("hola");
+    </script>
+     ';
+
+}
+else {
+    echo 'valio';
+}
