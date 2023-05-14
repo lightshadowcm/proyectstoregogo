@@ -16,7 +16,7 @@ $conexion=pg_connect('host=dbtiendagogo.postgres.database.azure.com port=5432 db
 if($conexion){
      echo'
       <script>
-        alert("hola");
+        alert("conexcion exitosa");
     </script>
      ';
 
