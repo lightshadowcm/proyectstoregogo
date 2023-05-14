@@ -20,21 +20,7 @@ $password ='PedroPeruan.';
 $conexion=pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 if($conexion){
     // echo'<script>alert("conexcion exitosa");</script>';
-    
-     
-        
-      
-
-}
-else {
-    echo 'valio';
-}
-pg_close($conexion);
-?>
-<?php
-
-session_start();
-                $query = "SELECT id,nombre,empresa from proveedor";
+    $query = "SELECT id,nombre,empresa from proveedor";
                 $consulta = pg_query($conexion, $query);
 
                 if ($consulta) {
@@ -52,5 +38,19 @@ session_start();
                         echo '</div>';
                     }
                 }
+     
+        
+      
+
+}
+else {
+    echo 'valio';
+}
+pg_close($conexion);
+?>
+<?php
+
+session_start();
+                
 
                 ?>
