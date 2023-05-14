@@ -19,13 +19,38 @@ $user = 'dbadmintg';
 $password ='PedroPeruan.';
 $conexion=pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 if($conexion){
-     echo'
-      <script>
-        alert("conexcion exitosa");
-    </script>
-     ';
+    // echo'<script>alert("conexcion exitosa");</script>';
+    
+     
+        
+      
 
 }
 else {
     echo 'valio';
 }
+pg_close($conexion);
+?>
+<?php
+
+session_start();
+                $query = "SELECT id,nombre,empresa from proveedor";
+                $consulta = pg_query($conexion, $query);
+
+                if ($consulta) {
+
+                    if (pg_num_rows($consulta) > 0) {
+                        echo '<h2> Proveedores Eegistrados <br> </h2> ';
+
+                        echo '<h4>ID | Nombre| Empresa <br> </h4> ';
+                        echo '<div class="lista">';
+                        while ($obj = pg_fetch_object($consulta)) {
+
+
+                            echo '<p class"obj"> ' . $obj->id . ' | ' . $obj->nombre . ' | ' . $obj->empresa . ' <br> </p>';
+                        }
+                        echo '</div>';
+                    }
+                }
+
+                ?>
