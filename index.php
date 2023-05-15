@@ -39,6 +39,7 @@ while ($fila = $resultado->fetch(PDO::FETCH_ASSOC)) {
 $conexion = null;
 } else {
     echo 'valio';
+    die("Error en la consulta: " . $conexion->errorInfo()[2]);
 }
 
 ?>
