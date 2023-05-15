@@ -20,27 +20,23 @@ $port = '5432';
 $dbname = 'Tienda GoGo';
 $user = 'dbadmintg';
 $password = 'PedroPeruan.';
-$conexion = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
+$conexion = new PDO('pgsql:host=dbtiendagogo.postgres.database.azure.com;dbname=Tienda GoGo', 'dbadmintg', 'PedroPeruan.');
 if ($conexion) {
 
-    $query = "SELECT id,nombre,empresa from proveedor";
-    $consulta = pg_query($conexion, $query);
+    $resultado = $conexion->query("SELECT * FROM tabla");
 
-    if ($consulta) {
+// Verificar si la consulta fue exitosa
+if (!$resultado) {
+    die("Error en la consulta: " . $conexion->errorInfo()[2]);
+}
 
-        if (pg_num_rows($consulta) > 0) {
-            echo '<h2> Proveedores Eegistrados <br> </h2> ';
+// Recorrer los resultados de la consulta
+while ($fila = $resultado->fetch(PDO::FETCH_ASSOC)) {
+    // Hacer algo con los datos de cada fila
+}
 
-            echo '<h4>ID | Nombre| Empresa <br> </h4> ';
-            echo '<div class="lista">';
-            while ($obj = pg_fetch_object($consulta)) {
-
-
-                echo '<p class"obj"> ' . $obj->id . ' | ' . $obj->nombre . ' | ' . $obj->empresa . ' <br> </p>';
-            }
-            echo '</div>';
-        }
-    }
+// Cerrar la conexión a la base de datos
+$conexion = null;
 } else {
     echo 'valio';
 }
