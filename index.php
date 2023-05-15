@@ -23,7 +23,7 @@ $password = 'PedroPeruan.';
 $conexion = new PDO('pgsql:host=dbtiendagogo.postgres.database.azure.com;dbname=Tienda GoGo', 'dbadmintg', 'PedroPeruan.');
 if ($conexion) {
 
-    $resultado = $conexion->query("SELECT * FROM tabla");
+    $resultado = $conexion->query("SELECT * FROM clientes");
 
 // Verificar si la consulta fue exitosa
 if (!$resultado) {
