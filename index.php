@@ -15,6 +15,8 @@
 
 </html>
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 $host = 'dbtiendagogo.postgres.database.azure.com';
 $port = '5432';
 $dbname = 'Tienda GoGo';
