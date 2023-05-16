@@ -20,26 +20,14 @@ $port = '5432';
 $dbname = 'Tienda GoGo';
 $user = 'dbadmintg';
 $password = 'PedroPeruan.';
-$conexion = new PDO('pgsql:host=dbtiendagogo.postgres.database.azure.com;dbname=Tienda GoGo', 'dbadmintg', 'PedroPeruan.');
-if ($conexion) {
-
-    $resultado = $conexion->query("SELECT * FROM clientes");
-
-// Verificar si la consulta fue exitosa
-if (!$resultado) {
-    die("Error en la consulta: " . $conexion->errorInfo()[2]);
-}
-
-// Recorrer los resultados de la consulta
-while ($fila = $resultado->fetch(PDO::FETCH_ASSOC)) {
-    // Hacer algo con los datos de cada fila
-}
-
-// Cerrar la conexión a la base de datos
-$conexion = null;
-} else {
-    echo 'valio';
-    die("Error en la consulta: " . $conexion->errorInfo()[2]);
-}
+$sslmode = 'require';
+$sslrootcert = __DIR__ . '/ssl';
+$dsn = "host=$host port=$port dbname=$dbname user=$user password=$password sslmode=$sslmode sslrootcert=$sslrootcert";
+$conexion = pg_connect($dsn);
+if (!$conexion) {
+    echo "Error de conexión: " . pg_last_error();
+    exit;
+} 
+pg_close($conexion);
 
 ?>
