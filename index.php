@@ -28,6 +28,28 @@ if (!$conexion) {
     echo "Error de conexión: " . pg_last_error();
     exit;
 } 
+$query = "SELECT * FROM clientes";
+$result = pg_query($conexion, $query);
+
+if (!$result) {
+    echo "Error en la consulta: " . pg_last_error();
+    exit;
+}
+
+
+while ($row = pg_fetch_assoc($result)) {
+    echo "Campo 1: " . $row['campo1'] . "<br>";
+    echo "Campo 2: " . $row['campo2'] . "<br>";
+    
+}
+
 pg_close($conexion);
+
+
+
+
+
+
+
 
 ?>
