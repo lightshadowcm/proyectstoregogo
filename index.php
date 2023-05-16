@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <h2>a ver3</h2>
+    <h2>a ver4</h2>
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 $host = 'dbtiendagogo.postgres.database.azure.com';
 $port = '5432';
-$dbname = 'tiendaGoGo';
+$dbname = 'tiendaGoGO';
 $user = 'dbadmintg';
 $password = 'PedroPeruan.';
 $sslmode = 'require';
