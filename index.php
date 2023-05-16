@@ -10,22 +10,10 @@
 
 <body>
     <h2>a ver5</h2>
+
+</body>
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-$host = 'dbtiendagogo.postgres.database.azure.com';
-$port = '5432';
-$dbname = 'tiendaGoGO';
-$user = 'dbadmintg';
-$password = 'Pedroperuan.';
-$sslmode = 'require';
-$sslrootcert = __DIR__ . '/ssl.pem';
-$dsn = "host=$host port=$port dbname=$dbname user=$user password=$password sslmode=$sslmode sslrootcert=$sslrootcert";
-$conexion = pg_connect($dsn);
-if (!$conexion) {
-    echo "Error de conexión: " . pg_last_error();
-    exit;
-} 
+require 'conexion.php';
 $query = "SELECT id FROM clientes";
 $result = pg_query($conexion, $query);
 
@@ -40,17 +28,6 @@ while ($row = pg_fetch_assoc($result)) {
     
     
 }
-
 pg_close($conexion);
-
-
-
-
-
-
-
-
 ?>
-</body>
-
 </html>
