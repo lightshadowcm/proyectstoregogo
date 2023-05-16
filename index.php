@@ -9,11 +9,7 @@
 </head>
 
 <body>
-    <h2>a ver2</h2>
-
-</body>
-
-</html>
+    <h2>a ver3</h2>
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -55,3 +51,6 @@ pg_close($conexion);
 
 
 ?>
+</body>
+
+</html>
