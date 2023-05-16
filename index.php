@@ -17,7 +17,7 @@ $host = 'dbtiendagogo.postgres.database.azure.com';
 $port = '5432';
 $dbname = 'tiendaGoGO';
 $user = 'dbadmintg';
-$password = 'PedroPeruan.';
+$password = 'Pedroperuan.';
 $sslmode = 'require';
 $sslrootcert = __DIR__ . '/ssl.pem';
 $dsn = "host=$host port=$port dbname=$dbname user=$user password=$password sslmode=$sslmode sslrootcert=$sslrootcert";
