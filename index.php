@@ -21,7 +21,7 @@ $dbname = 'Tienda GoGo';
 $user = 'dbadmintg';
 $password = 'PedroPeruan.';
 $sslmode = 'require';
-$sslrootcert = __DIR__ . '/ssl';
+$sslrootcert = __DIR__ . '/ssl.pem';
 $dsn = "host=$host port=$port dbname=$dbname user=$user password=$password sslmode=$sslmode sslrootcert=$sslrootcert";
 $conexion = pg_connect($dsn);
 if (!$conexion) {
