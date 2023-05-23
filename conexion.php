@@ -38,6 +38,7 @@ $conexionDB = new ConexionDB();
 
 $conexion = $conexionDB->obtenerConexion(); 
 
+/* 
 $query = "SELECT id FROM clientes";
 $result = pg_query($conexion, $query);
 
@@ -51,7 +52,7 @@ while ($row = pg_fetch_assoc($result)) {
     echo "Campo 1: " . $row['id'] . "<br>";
     
     
-} 
+} */
 
 
 
