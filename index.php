@@ -24,12 +24,9 @@ if (!$result) {
     exit;
 }
 
-
 while ($row = pg_fetch_assoc($result)) {
     echo "Campo 1: " . $row['id'] . "<br>";
-    
-    
 }
-pg_close($conexion);
+
 ?>
 </html>
