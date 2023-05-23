@@ -24,11 +24,11 @@ if(isset($_SESSION['user'])){
         include_once 'login.php';
     }
 
- echo "validacion login";
+ //echo "validacion login";
  
 }
 else {
-    echo "login";
+    //echo "login";
     include_once 'login.php';
 }
 
