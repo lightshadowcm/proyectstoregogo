@@ -18,7 +18,7 @@
         <h2>iniciar sesion</h2>
         <label for="username">nombre usuario</label>
         <input type="text" name="username">
-        <label for="password">paswword</label>
+        <label for="password">contraseña</label>
         <input type="password" name="password" id="password">
         <input type="submit" value="Iniciar sesion">
 
