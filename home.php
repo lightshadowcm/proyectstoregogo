@@ -20,15 +20,19 @@
     <p>Estamos en contruccion</p>
     <article>
      <label for="pedro bailando ">Pedro Laburando </label>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/sZVLcsLkEUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/sZVLcsLkEUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; mute=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </article>
     <article>
-        <label for="">Leandro Laburando</label> <iframe width="560" height="315" src="https://www.youtube.com/embed/sR0uHLsw8L0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <label for="">Leandro Laburando</label> <iframe width="560" height="315" src="https://www.youtube.com/embed/MoO0WF95nsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     </articlea>
     <article>
         <label for="">iory buscando grupo</label>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/n5vhrk0Wed0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+    <article>
+        <label for="">adhan el dia mas tranquilo</label>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ysdPb1QSJSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </article>
 </body>
 </html>
