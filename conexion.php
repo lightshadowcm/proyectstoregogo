@@ -8,7 +8,11 @@ class ConexionDB {
         $this->conectar();
     }
 
-    private function conectar() {
+     function conectar() {
+        try
+        {
+
+      
         $host = 'dbtiendagogo.postgres.database.azure.com';
         $port = '5432';
         $dbname = 'tiendaGoGO';
@@ -16,12 +20,24 @@ class ConexionDB {
         $password = 'Pedroperuan.';
         $sslmode = 'require';
         $sslrootcert = __DIR__ . '/ssl.pem';
-        $dsn = "host=$host port=$port dbname=$dbname user=$user password=$password sslmode=$sslmode sslrootcert=$sslrootcert";
-        $this->conexion = pg_connect($dsn);
-        if (!$this->conexion) {
-            echo "Error de conexión: " . pg_last_error();
-            exit;
-        }
+        $dsn= "host=$host port=$port dbname=$dbname user=$user password=$password sslmode=$sslmode sslrootcert=$sslrootcert";
+        $this->conexion = pg_connect($dsn);  
+       // if (!$this->conexion) {
+           // echo "Error de conexión: " . pg_last_error();
+         //   exit;
+       // }
+          // };
+        $options = [
+            PDO::ATTR_ERRMODE   => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_EMULATE_PREPARES =>FALSE,
+               ];
+               $pdo = new PDO ($dsn,$user, $password,$options);
+               return $pdo;
+            }
+        catch(PDOException $e){
+
+           print_r('error connection: '.$e->getMessage());
+        };
     }
 
     public function obtenerConexion() {
@@ -53,16 +69,3 @@ while ($row = pg_fetch_assoc($result)) {
     
     
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-?>
