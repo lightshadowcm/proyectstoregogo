@@ -22,7 +22,7 @@ if(isset($_SESSION['user'])){
  
 }
 else {
-   // echo "login";
+    echo "login";
     include_once 'login.php';
 }
 
