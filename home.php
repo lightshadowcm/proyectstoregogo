@@ -18,6 +18,7 @@
     </header>
     <h1>Bienvenido a la tienda GoGo</h1>
     <p>Estamos en contruccion</p>
-    
+     <label for="pedro bailando ">pedro laburando</label>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/sZVLcsLkEUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
 </html>
