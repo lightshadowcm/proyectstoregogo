@@ -13,7 +13,7 @@
 
 </body>
 <?php
-require_once '/conexion.php';
+require_once 'conexion.php';
 $conexionDB = new ConexionDB();
 $conexion = $conexionDB->obtenerConexion();
 $query = "SELECT id FROM clientes";
