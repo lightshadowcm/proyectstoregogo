@@ -10,6 +10,11 @@
 
 <body>
     <form action="" method="POST">
+        <?php
+        if(isset($errorLogin)){
+            echo $errorLogin;
+        }
+        ?>
         <h2>iniciar sesion</h2>
         <label for="username">nombre usuario</label>
         <input type="text" name="username">
