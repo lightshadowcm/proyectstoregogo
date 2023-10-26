@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <main
     <form action="" method="POST">
         <?php
         if(isset($errorLogin)){

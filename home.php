@@ -12,6 +12,7 @@
             <li>home</li>
             <li class="cerrar-sesion">
                 <a href="/logout.php">Cerrar Sesion</a>
+                <a href="/user.php">Cerrar Sesion</a>
             </li>
         </ul>
         
