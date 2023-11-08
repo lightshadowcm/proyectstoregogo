@@ -111,6 +111,7 @@
     font-size: 12px;
     margin: 20px;
     height: 85%;
+    align-items: center;
     border-radius: 30px;
     text-align: center;
   }
@@ -167,7 +168,7 @@
   }
   tr{
     font-size: 7px;
-    
+
   }
   
 
