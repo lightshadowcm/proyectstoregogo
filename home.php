@@ -31,16 +31,16 @@
 
                 <table class="lista">
                     <tr>
-                        <th>empleados</th>
+                        <th> Empleados </th>
                     <tr>
-                        <td>id</td>
-                        <td>nombre</td>
-                        <td>apellido</td>
-                        <td>documento</td>
-                        <td>emial</td>
-                        <td>telefono</td>
-                        <td>direccion</td>
-                        <td>genero</td>
+                        <td> Id </td>
+                        <td> Nombre </td>
+                        <td> Apellido </td>
+                        <td> Documento </td>
+                        <td> Emial </td>
+                        <td> Telefono </td>
+                        <td> Direccion </td>
+                        <td> Genero </td>
                     </tr>
                     <tr>
                         <td>01</td>
