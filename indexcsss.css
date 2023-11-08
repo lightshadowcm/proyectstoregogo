@@ -108,7 +108,7 @@
   .div-lista {
     background-color: rgb(11, 229, 236);
     list-style-type: none;
-    
+    font-size: 12px;
     margin: 20px;
     height: 85%;
     border-radius: 30px;
