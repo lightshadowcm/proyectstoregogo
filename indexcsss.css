@@ -166,6 +166,9 @@
     top: 15%;
 
   }
+  table{
+    padding: 10px;
+  }
   tr{
     font-size: 14px;
     left: 10px;
