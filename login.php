@@ -10,7 +10,7 @@
 
 <body>
     <main></main>
-    <form action="index.php" method="POST">
+    <form action="" method="POST">
         <?php
         if(isset($errorLogin)){
             echo $errorLogin;
