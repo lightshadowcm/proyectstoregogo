@@ -29,11 +29,14 @@
     <section class="left-section">
         <div class="div-lista">
           
-          <ul>
-             <li>|id|nombre|apellido|documento|emial|telefono|direccion|genero|</li>
-            <li>|01|adhan|cubillos|10067876|adham@gmail|3234233|cra453vws|masculino</li>
-            <li>|02leandro|lesmes|10067873|leandro@gmail|3237833|cra653vws|masculino</li>
-            <li>|01|pedro |rivera|10067872|pedro@gmail|3234563|cra433vws|masculino</li>
+          <table class="lista">
+             <tr>
+                <th>empleados</th>
+               <tr> <td>id</td> <td>nombre</td><td>apellido</td><td>documento</td><td>emial</td><td>telefono</td><td>direccion</td><td>genero</td></tr>
+               <tr> <td>01</td> <td>adhan</td><td>cubillos</td><td>1005634</td><td>adhan@gmail.com</td><td>34354645</td><td>cra14332</td><td>masculino</td></tr>
+               <tr> <td>02</td> <td>pedro</td><td>rivera</td><td>1054645</td><td>judas@gmail.com</td><td>343544533</td><td>cra14345</td><td>masculino</td></tr>
+               <tr> <td>03</td> <td>leandro</td><td>lesmes</td><td>1005453</td><td>leandro@gmail.com</td><td>34354645</td><td>cra14452</td><td>masculino</td></tr>
+               
           </ul>
         </div>
       </section>
