@@ -17,7 +17,7 @@
         <ul class="ul-nav">
           <li class="il-nav"><a class="a-nav" href="#">Incio</a></li>
           
-          <li class="cerrar-sesion">
+          <li class="cerrar-sesion" class="il-nav">
                 <a href="/logout.php">Cerrar Sesion</a>
             </li>
           <li class="il-nav"><a class="a-nav" href="perfil.html">Perfil</a></li>
