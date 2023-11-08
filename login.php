@@ -16,7 +16,7 @@
         <main>
             <section class="main">
                 <div class="login">
-                    <h2>iniciar sesion</h2><br>
+                    <h2>Iniciar Sesion</h2><br>
                     <form action="" method="POST">
                         <?php
                         if (isset($errorLogin)) {
@@ -24,10 +24,10 @@
                         }
                         ?>
                         <label for="username">Nombre Usuario</label><br>
-                        <input type="text" name="username" required placeholder="pedro"><br>
-                        <label for="password">contraseña</label><br>
+                        <input type="text" name="username" required placeholder="Pedro"><br>
+                        <label for="password">Contraseña</label><br>
                         <input type="password" name="password" requerid placeholder="12345" id="password"><br>
-                        <input id="button" type="submit" value="Iniciar sesion"><br>
+                        <input id="button" type="submit" value="Iniciar Sesion"><br>
                         <a href="#">No tengo Cuenta</a>
                     </form>
                 </div>
