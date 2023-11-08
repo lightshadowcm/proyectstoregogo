@@ -13,6 +13,11 @@
             <div class="login">
                 <h2>iniciar sesion</h2><br>
                 <form action="" method="POST">
+                    <?php
+        if(isset($errorLogin)){
+            echo $errorLogin;
+        }
+        ?>
                 <label for="username">Nombre Usuario</label><br>
                 <input type="text" name="username" required placeholder="pedro"><br>
                 <label for="password">contraseña</label><br>

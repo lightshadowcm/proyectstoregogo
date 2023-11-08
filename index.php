@@ -19,7 +19,7 @@ if(isset($_SESSION['user'])){
         $user->setUser($userForm);
         include_once 'home.php';
     }else{
-        echo"joder";
+     
         $errorLogin = "Nombre de usuario y/o Contraseña incorrecto";
         include_once 'login.php';
     }
