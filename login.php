@@ -9,21 +9,23 @@
 </head>
 
 <body>
-    <main
-    <form action="" method="POST">
-        <?php
-        if(isset($errorLogin)){
-            echo $errorLogin;
-        }
-        ?>
+    <main> 
         <h2>iniciar sesion</h2>
-        <label for="username">nombre usuario</label>
-        <input type="text" name="username">
-        <label for="password">contraseña</label>
-        <input type="password" name="password" id="password">
-        <input type="submit" value="Iniciar sesion">
+        <form action="" method="POST">
+            <?php
+            if (isset($errorLogin)) {
+                echo $errorLogin;
+            }
+            ?>
 
-    </form>
+            <label for="username">nombre usuario</label>
+            <input type="text" name="username">
+            <label for="password">contraseña</label>
+            <input type="password" name="password" id="password">
+            <input type="submit" value="Iniciar sesion">
+
+        </form>
+    </main>
 </body>
 
 </html>
