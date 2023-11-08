@@ -32,12 +32,10 @@
         <div class="div-lista">
           
           <ul>
-            
-            <li>2</li>
-            <li>2</li>
-            <li>2</li>
-            <li>2</li>
-            <li>2</li>
+             <li>|id|nombre|apellido|documento|emial|telefono|direccion|genero|</li>
+            <li>|01|adhan|cubillos|10067876|adham@gmail|3234233|cra453vws|masculino</li>
+            <li>|02leandro|lesmes|10067873|leandro@gmail|3237833|cra653vws|masculino</li>
+            <li>|01|pedro |rivera|10067872|pedro@gmail|3234563|cra433vws|masculino</li>
           </ul>
         </div>
       </section>
