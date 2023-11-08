@@ -65,7 +65,7 @@
               placeholder="ospina"
             />
             <br />
-            <label id="documento" for="">DOCUMENTO ID</label><br />
+            <label id="documento" for="documento">DOCUMENTO ID</label><br />
             <input id="documento"
             type="text" required pattern="[[0-9]+]+" placeholder="10043543" 
             /><br />
@@ -99,7 +99,7 @@
               <option value="otro">Otro</option>
             </select>
             <br />
-            <label for="contraseña">contraseña</label><br />
+            <label for="password">contraseña</label><br />
             <input 
             id="password" 
             pattern="[a-zA-Z@.,_-/]+"
