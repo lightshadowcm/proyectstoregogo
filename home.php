@@ -15,12 +15,10 @@
       <h1>El Derretido</h1>
       <nav>
         <ul class="ul-nav">
-          <li class="il-nav"><a class="a-nav" href="#">Incio</a></li>
+          <li class="il-nav"><a id="a-nav" href="#">Incio</a></li>
           
-          <li class="cerrar-sesion" class="il-nav">
-                <a href="/logout.php">Cerrar Sesion</a>
-            </li>
-          <li class="il-nav"><a class="a-nav" href="perfil.html">Perfil</a></li>
+          <li class="cerrar-sesion" id="il-nav"><a href="/logout.php">Cerrar Sesion</a></li>
+          <li class="il-nav"><a id="a-nav" href="perfil.html">Perfil</a></li>
         </ul>
       </nav>
       
